@@ -19,12 +19,12 @@ CREATE TABLE IF NOT EXISTS Books (
     FOREIGN KEY (author_id) REFERENCES Authors(author_id)
 );
 
--- 3. Customers Table
+-- Table: Customers
 CREATE TABLE IF NOT EXISTS Customers (
-    customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    customer_name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    address VARCHAR(255)
+  customer_id INT AUTO_INCREMENT PRIMARY KEY,
+  customer_name VARCHAR(215),
+  email VARCHAR(215),
+  address TEXT
 );
 
 -- 4. Orders Table
